@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
 <robot name="zbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$package://urdf/materials.xacro" />
-<xacro:include filename="$package://urdf/zbot.ros2control.xacro" />
-<xacro:include filename="$package://urdf/zbot.gazebo.xacro" />
+<!-- Fixed xacro includes -->
+<xacro:include filename="materials.xacro" />
+<xacro:include filename="zbot.ros2control.xacro" />
+<xacro:include filename="zbot.gazebo.xacro" />
 
 <link name="base_footprint"/>
 <joint name = "base_footprint_joint" type="fixed">
@@ -150,8 +151,5 @@
   <child link="rf_wheel_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
-
-
-
 
 </robot>
