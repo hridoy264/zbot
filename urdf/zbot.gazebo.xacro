@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<robot name="zbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="body_color" value="Gazebo/Silver" />
+
+  <!-- Base Link Gazebo Properties -->
+  <gazebo reference="base_link">
+    <material>${body_color}</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <self_collide>true</self_collide>
+    <gravity>true</gravity>
+  </gazebo>
+
+  <!-- Left Back Wheel -->
+  <gazebo reference="lb_wheel_1">
+    <material>${body_color}</material>
+    <mu1>0.8</mu1>
+    <mu2>0.3</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+    <self_collide>false</self_collide>
+  </gazebo>
+
+  <!-- Left Front Wheel -->
+  <gazebo reference="lf_wheel_1">
+    <material>${body_color}</material>
+    <mu1>0.8</mu1>
+    <mu2>0.3</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+    <self_collide>false</self_collide>
+  </gazebo>
+
+  <!-- Right Back Wheel -->
+  <gazebo reference="rb_wheel_1">
+    <material>${body_color}</material>
+    <mu1>0.8</mu1>
+    <mu2>0.3</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+    <self_collide>false</self_collide>
+  </gazebo>
+
+  <!-- Right Front Wheel -->
+  <gazebo reference="rf_wheel_1">
+    <material>${body_color}</material>
+    <mu1>0.8</mu1>
+    <mu2>0.3</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+    <self_collide>false</self_collide>
+  </gazebo>
+
+  <!-- Gazebo ROS 2 Control Plugin -->
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$package:///config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+</robot>
