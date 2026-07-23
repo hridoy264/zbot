@@ -12,8 +12,9 @@ def generate_launch_description():
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
     pkg_ros_gz_rbot = get_package_share_directory('zbot_description')
 
-    # Get the install/ directory containing all package share folders
-    pkg_parent_dir = os.path.dirname(pkg_ros_gz_rbot)
+    # STEP 2: Get the parent folder containing package share directories
+    # This allows Ignition/Gazebo to resolve 'package://zbot_description/...' mesh URIs
+    pkg_parent_dir = os.path.abspath(os.path.join(pkg_ros_gz_rbot, '..'))
 
     # Set environment variables for both Ignition Gazebo (Fortress) and Gazebo Sim (Garden+)
     set_ign_resource_path = SetEnvironmentVariable(
