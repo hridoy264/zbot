@@ -21,14 +21,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/base_link.stl" scale="1 1 1"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/base_link.stl" scale="1 1 1"/>
     </geometry>
   </collision>
 </link>
@@ -42,14 +42,14 @@
   <visual>
     <origin xyz="-0.049055 0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/lb_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/lb_wheel_1.stl" scale="1 1 1"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.049055 0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/lb_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/lb_wheel_1.stl" scale="1 1 1"/>
     </geometry>
   </collision>
 </link>
@@ -63,14 +63,14 @@
   <visual>
     <origin xyz="0.049055 0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/lf_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/lf_wheel_1.stl" scale="1 1 1"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.049055 0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/lf_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/lf_wheel_1.stl" scale="1 1 1"/>
     </geometry>
   </collision>
   <!-- Front left wheel friction -->
@@ -91,14 +91,14 @@
   <visual>
     <origin xyz="-0.049055 -0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/rb_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/rb_wheel_1.stl" scale="1 1 1"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.049055 -0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/rb_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/rb_wheel_1.stl" scale="1 1 1"/>
     </geometry>
   </collision>
 </link>
@@ -112,14 +112,14 @@
   <visual>
     <origin xyz="0.049055 -0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/rf_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/rf_wheel_1.stl" scale="1 1 1"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.049055 -0.055 -0.005" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://zbot_description/meshes/rf_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://zbot_description/meshes/rf_wheel_1.stl" scale="1 1 1"/>
     </geometry>
   </collision>
 </link>
